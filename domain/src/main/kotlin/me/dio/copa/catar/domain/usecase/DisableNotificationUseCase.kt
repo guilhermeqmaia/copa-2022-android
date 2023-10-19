@@ -4,9 +4,9 @@ import me.dio.copa.catar.domain.repositories.MatchesRepository
 import javax.inject.Inject
 
 class DisableNotificationUseCase @Inject constructor(
-    private val repository: MatchesRepository
+    private val repository : MatchesRepository,
 ) {
-    suspend operator fun invoke(id: String){
-        return repository.disableNotificationFor(id)
-    }
+    suspend operator fun invoke(id: String) {
+        repository.disableNotificationFor(id)
+   }
 }

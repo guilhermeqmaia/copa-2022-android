@@ -28,13 +28,13 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import me.dio.copa.catar.R
 import me.dio.copa.catar.domain.extensions.getDate
+import me.dio.copa.catar.domain.model.Match
 import me.dio.copa.catar.domain.model.MatchDomain
 import me.dio.copa.catar.domain.model.TeamDomain
 import me.dio.copa.catar.ui.theme.Shapes
 
 typealias NotificationOnClick = (match: MatchDomain) -> Unit
 
-@Composable
 fun MainScreen(matches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
     Box(
         modifier = Modifier
@@ -138,3 +138,4 @@ fun TeamItem(team: TeamDomain) {
         )
     }
 }
+
