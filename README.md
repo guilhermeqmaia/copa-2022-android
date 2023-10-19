@@ -30,3 +30,6 @@ Todos esses TODOs foram realizados nesta live incrível, com a participação de
 **[Android Mobile Week #2: Aprenda a Criar um App com Listagem e Notificações dos Jogos do Brasil na Copa](https://youtu.be/30ZiJmCWliI)**
 
 Bons estudos galera 😘
+=======
+https://digitalinnovationone.github.io/copa-2022-android/api.json
+

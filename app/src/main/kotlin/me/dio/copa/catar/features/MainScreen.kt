@@ -35,19 +35,15 @@ import me.dio.copa.catar.ui.theme.Shapes
 
 typealias NotificationOnClick = (match: MatchDomain) -> Unit
 
-@Composable
-fun MainScreen(matches: List<Match>, onClickNotification : NotificationOnClick) {
-    Box(modifier = Modifier
-        .fillMaxSize()
-        .padding(8.dp)) {
-        LazyColumn(
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
+fun MainScreen(matches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(8.dp)
+    ) {
+        LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             items(matches) { match ->
-                MatchInfo(
-                    match = match,
-                    onNotificationClick = onClickNotification
-                )
+                MatchInfo(match, onNotificationClick)
             }
         }
     }
@@ -142,3 +138,4 @@ fun TeamItem(team: TeamDomain) {
         )
     }
 }
+

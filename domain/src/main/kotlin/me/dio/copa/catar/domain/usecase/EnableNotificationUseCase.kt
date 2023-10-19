@@ -10,3 +10,4 @@ class EnableNotificationUseCase @Inject constructor(
         repository.enableNotificationFor(id)
     }
 }
+
